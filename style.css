@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #1e201e;
+  color: #ecdfcc;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header > h1 {
+  animation: header-animation-h1 1s ease-out;
+}
+.navlink {
+  color: #ecdfcc;
+  text-decoration: none;
+  margin: 0px 10px;
+  font-size: 20px;
+  animation: header-animation-h1 1s ease-in;
+  display: inline-block;
+}
+section {
+  padding: 20px 10px;
+}
+.sectionheading {
+  text-align: center;
+  text-decoration: underline;
+  margin: 10px 0;
+  color: #1e201e;
+  animation: card-animation ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+.aboutme-heading {
+  animation: aboutme-animation 2s ease-out;
+}
+.myimage {
+  width: 400px;
+}
+.aboutsection {
+  display: flex;
+  gap: 10px;
+  animation: aboutme-animation 2s ease-out;
+}
+fieldset {
+  width: 300px;
+  padding: 10px;
+  color: #1e201e;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #697565;
+  animation: card-animation ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+legend {
+  text-align: center;
+  font-size: 25px;
+}
+.cardscontainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+form {
+  /* border: 2px solid red; */
+  width: 400px;
+  height: 500px;
+  box-shadow: 2px 2px 5px #697565;
+  padding: 20px;
+  animation: card-animation ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+label {
+  font-size: 25px;
+  margin: 20px 0px 20px 0px;
+}
+input {
+  width: 380px;
+  height: 40px;
+  margin: 20px 0px 20px 0px;
+}
+.btn {
+  width: 100px;
+  height: 50px;
+  background-color: #1e201e;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+}
+footer {
+  background-color: #1e201e;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+form {
+  border-radius: 5px;
+}
+body {
+  background-color: #ecdfcc;
+}
+@keyframes header-animation-h1 {
+  from {
+    transform: translate(0, -30px);
+    opacity: 0;
+  }
+}
+@keyframes card-animation {
+  from {
+    transform: translate(-50px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+@keyframes aboutme-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
